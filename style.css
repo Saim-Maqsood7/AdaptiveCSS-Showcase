@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+
+}
+.middle{
+    height:calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
+.left{
+    height: 8;
+    width: 50%;
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 4vw;
+    line-height: 4vw;
+}
+.left span{
+    color:#EC743D;
+}
+.left p{
+    font-size: 1vw;
+    margin: 1vw 0;
+    color: #666;
+    width: 80%;
+}
+button{
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    background-color: #EC743D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.right{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.right img {
+    height: 100%;
+    width: 80%;
+
+
+
+}
+
+.nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+}
+.nav_part2{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+    color: #EC743D;
+}
+.nav h4 {
+    font-size: 1vw;
+    color: #EC743D;
+}
+.nav i {
+    display: none;
+    font-size: 1.6vw;
+    font-weight: 800;
+}
+
+@media (max-width:600px) {
+    .nav{
+        padding: 0 6vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 6vw;
+    }
+    .nav h4{
+        display: none;
+    }
+    .nav i {
+        display: block;
+        font-size: 6vw;
+    }
+    .middle{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+        padding: 4vw 5vw;
+        
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    .left p{
+        font-size: 3vw;
+        margin: 2vw 0;
+    }
+    .left button{
+        font-size: 3vw;
+    }
+    .right{
+        width: 100%;
+        height: 60%;
+    }
+
+}
